@@ -1,0 +1,2 @@
+javac MapCell.java ValhallaMap.java Main.java
+java Main

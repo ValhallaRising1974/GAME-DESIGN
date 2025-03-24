@@ -1,0 +1,87 @@
+// MapCell.java
+
+public class MapCell {
+    private String symbol;
+    private String type;
+
+    public MapCell(String symbol, String type) {
+        this.symbol = symbol;
+        this.type = type;
+    }
+
+    public String getSymbol() {
+        return symbol;
+    }
+
+    public String getType() {
+        return type;
+    }
+}
+
+// ValhallaMap.java
+
+public class ValhallaMap {
+    private final int width = 13;
+    private final int height = 9;
+    private MapCell[][] grid;
+
+    public ValhallaMap() {
+        grid = new MapCell[height][width];
+        initMap();
+    }
+
+    private void initMap() {
+        // Fill empty cells
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                grid[y][x] = new MapCell("·", "Empty");
+            }
+        }
+
+        // Highland (Row 2)
+        for (int x = 2; x <= 10; x++) {
+            String symbol = (x % 3 == 2) ? "O" : "H";
+            String type = (x % 3 == 2) ? "Obelisk" : "Highland";
+            grid[2][x] = new MapCell(symbol, type);
+        }
+
+        // The Middle Way (Row 4)
+        for (int x = 1; x <= 11; x++) {
+            String symbol = (x % 4 == 1) ? "O" : "M";
+            String type = (x % 4 == 1) ? "Obelisk" : "Middle Way";
+            grid[4][x] = new MapCell(symbol, type);
+        }
+
+        // Firestarter (Row 6)
+        for (int x = 2; x <= 10; x++) {
+            String symbol = (x % 3 == 2) ? "O" : "F";
+            String type = (x % 3 == 2) ? "Obelisk" : "Firestarter";
+            grid[6][x] = new MapCell(symbol, type);
+        }
+    }
+
+    public void printMap() {
+        System.out.println("Valhalla Rising – Symbolic Map (Java Prototype)\n");
+        for (int y = 0; y < height; y++) {
+            for (int x = 0; x < width; x++) {
+                System.out.print(grid[y][x].getSymbol() + " ");
+            }
+            System.out.println();
+        }
+        System.out.println("\nLegend:");
+        System.out.println("H = Highland (Top Route)");
+        System.out.println("M = The Middle Way");
+        System.out.println("F = Firestarter (Bottom Route)");
+        System.out.println("O = Obelisk");
+        System.out.println("· = Empty Space");
+    }
+}
+
+// Main.java
+
+public class Main {
+    public static void main(String[] args) {
+        ValhallaMap map = new ValhallaMap();
+        map.printMap();
+    }
+}

@@ -1,0 +1,65 @@
+# 🗺️ Valhalla Rising – Symbolic Map (Java Prototype)
+
+This Java-based map system is part of the evolving game universe **Valhalla Rising – The Parchment**. It represents a simplified version of the battlefield, including key symbolic elements like routes and obelisks.
+
+---
+
+## Overview
+
+The map is divided into three main lanes where champions move, interact, and clash:
+
+- **Highland** – The top route
+- **The Middle Way** – The central lane
+- **Firestarter** – The bottom route
+
+Each lane includes **Obelisks**, spiritual and strategic anchors within the game world.
+
+---
+
+## Files Included
+
+| File             | Description                                      |
+|------------------|--------------------------------------------------|
+| `MapCell.java`   | Defines each map cell (symbol + type)            |
+| `ValhallaMap.java` | Initializes the map grid with symbolic logic     |
+| `Main.java`      | Runs and displays the map in terminal            |
+
+---
+
+## Features
+
+- Symbolic representation of lanes and obelisks
+- Clear structure using OOP (Object-Oriented Programming)
+- Easy to expand: jungle zones, fog of war, interactions
+- Readable terminal layout with legend
+
+---
+
+## How to Run
+
+```bash
+javac MapCell.java ValhallaMap.java Main.java
+java Main
+```
+
+You will see a visual representation of the symbolic map in the terminal.
+
+---
+
+## Legend
+
+| Symbol | Meaning                 |
+|--------|--------------------------|
+| `H`    | Highland (Top Route)     |
+| `M`    | The Middle Way (Mid)     |
+| `F`    | Firestarter (Bottom Route)|
+| `O`    | Obelisk (Strategic Node) |
+| `·`    | Empty Space (Void)       |
+
+---
+
+## Author
+
+**Marcelo** (a.k.a. [Valhalla Rising](https://github.com/ValhallaRising1974))
+
+Forging a symbolic universe with code, language, and soul. 🛡️

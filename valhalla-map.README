@@ -1,0 +1,64 @@
+# 🗺️ Valhalla Rising – Symbolic Map (Python Prototype)
+
+This is a prototype map system for **Valhalla Rising – The Parchment**, developed in Python. 
+It represents the game's symbolic battlefield using characters and grid logic.
+
+---
+
+## Overview
+
+The map is a floating battlefield, shaped by ancient forces. It is divided into three key routes:
+
+- **Highland** (Top Lane)
+- **The Middle Way** (Mid Lane)
+- **Firestarter** (Bottom Lane)
+
+Each lane contains **Obelisks**, ancient structures of defense and symbolism. The terrain floats in a void, surrounded by the stars.
+
+---
+
+## Current Features
+
+- Map grid: 13 columns x 9 rows
+- Symbolic representation of lanes and obelisks
+- Printed layout in the terminal
+- Expandable logic for movement, fog of war, and collision in future versions
+
+---
+
+## Legend
+
+| Symbol | Meaning                 |
+|--------|--------------------------|
+| `H`    | Highland (Top Route)     |
+| `M`    | The Middle Way (Mid)     |
+| `F`    | Firestarter (Bottom)     |
+| `O`    | Obelisk (defensive point)|
+| `·`    | Empty Space (void)       |
+
+---
+
+## How to Run
+
+```bash
+python valhalla_map.py
+```
+
+This will display the current symbolic map directly in the terminal.
+
+---
+
+## Next Steps
+
+- Add player start zones
+- Define jungle/neutral zones
+- Integrate with champion movement system
+- Export as visual render (optional)
+
+---
+
+## 👤 Author
+
+**Marcelo** (a.k.a. [Valhalla Rising](https://github.com/ValhallaRising1974))
+
+Crafted with heart. Guided by stars.

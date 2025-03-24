@@ -1,0 +1,5 @@
+GAME-DESIGN/
+├── valhalla-dialogues/
+│   ├── valhalla_dialogue_system.py
+│   ├── dialogues.json
+│   └── README.md

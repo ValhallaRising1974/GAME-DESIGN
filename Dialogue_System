@@ -1,0 +1,25 @@
+# valhalla_dialogue_system.py
+
+import json
+import random
+
+# Load dialogue data from JSON
+with open("dialogues.json", "r", encoding="utf-8") as f:
+    dialogues = json.load(f)
+
+# Function to get dialogue by character and context
+def get_dialogue(character: str, situation: str) -> str:
+    char_data = dialogues.get(character, {})
+    lines = char_data.get(situation, [])
+    if not lines:
+        return "... (silent gaze)"
+    return random.choice(lines)
+
+# Example usage
+if __name__ == "__main__":
+    print("Valhalla Rising - Dialogue System")
+    character = input("Enter character name (e.g., Leila): ").strip()
+    situation = input("Enter situation (e.g., greeting, combat, teleport): ").strip()
+
+    response = get_dialogue(character, situation)
+    print(f"\n[{character} - {situation}] => {response}")

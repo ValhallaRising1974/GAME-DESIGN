@@ -1,0 +1,15 @@
+# Valhalla Rising - Dialogue System
+
+This is a simple Python script for managing character dialogues based on situation/context. It reads from a structured `.json` file and returns a random line based on input.
+
+## Usage
+1. Run the script.
+2. Enter the character name (e.g., Leila, Tuane).
+3. Enter the situation (e.g., greeting, combat, teleport).
+4. Get a random line matching the character and situation.
+
+## Files
+- `valhalla_dialogue_system.py` → Main logic.
+- `dialogues.json` → Customizable database of character lines.
+
+## Example

@@ -1,0 +1,56 @@
+// ValhallaChampion.java
+
+public abstract class ValhallaChampion {
+    protected String name;
+    protected String role;
+    protected int health;
+    protected int mana;
+
+    public ValhallaChampion(String name, String role, int health, int mana) {
+        this.name = name;
+        this.role = role;
+        this.health = health;
+        this.mana = mana;
+    }
+
+    public abstract String speak(String context);
+
+    public void showStatus() {
+        System.out.println("Champion: " + name);
+        System.out.println("Role: " + role);
+        System.out.println("Health: " + health);
+        System.out.println("Mana: " + mana);
+    }
+}
+
+// Leila.java
+
+public class Leila extends ValhallaChampion {
+
+    public Leila() {
+        super("Leila", "Warlock", 800, 1200);
+    }
+
+    @Override
+    public String speak(String context) {
+        return switch (context) {
+            case "greeting" -> "The stars watched you arrive.";
+            case "combat" -> "Peace walks with me, even in war.";
+            case "teleport" -> "I am everywhere... and nowhere.";
+            default -> "... (silent presence)";
+        };
+    }
+}
+
+// Main.java
+
+public class Main {
+    public static void main(String[] args) {
+        ValhallaChampion leila = new Leila();
+        leila.showStatus();
+
+        System.out.println("\n[Greeting] " + leila.speak("greeting"));
+        System.out.println("[Combat] " + leila.speak("combat"));
+        System.out.println("[Teleport] " + leila.speak("teleport"));
+    }
+}

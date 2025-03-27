@@ -1,0 +1,144 @@
+//  Valhalla Rising – Territory Exploration System (Java Prototype)
+// Now with Inner Progression – symbolic growth by exploring and awakening
+
+import java.util.*;
+
+// Abstract class for a region or territory on the map
+abstract class Territory {
+    protected String name;
+    protected String description;
+    protected boolean visited;
+    protected List<Territory> connections;
+
+    public Territory(String name, String description) {
+        this.name = name;
+        this.description = description;
+        this.visited = false;
+        this.connections = new ArrayList<>();
+    }
+
+    public void connect(Territory territory) {
+        connections.add(territory);
+        territory.connections.add(this);
+    }
+
+    public void explore(Player player) {
+        if (!visited) {
+            visited = true;
+            System.out.println("You enter: " + name);
+            System.out.println(description);
+            triggerSymbolicEvent(player);
+        } else {
+            System.out.println("You revisit: " + name);
+        }
+        System.out.println("Connections: " + getConnectedNames());
+    }
+
+    public String getConnectedNames() {
+        List<String> names = new ArrayList<>();
+        for (Territory t : connections) {
+            names.add(t.name);
+        }
+        return String.join(", ", names);
+    }
+
+    public abstract void interact();
+
+    public void triggerSymbolicEvent(Player player) {
+        Random rand = new Random();
+        if (rand.nextBoolean()) {
+            System.out.println("You feel something stir within...");
+            System.out.println("A fragment of consciousness has awakened.");
+            player.gainFragment();
+        }
+    }
+}
+
+class Obelisk extends Territory {
+    public Obelisk(String name, String description) {
+        super(name, description);
+    }
+
+    @Override
+    public void interact() {
+        System.out.println("The Obelisk hums with ancient energy. A whisper: 'Do you remember why you fight?'");
+    }
+}
+
+class Battlefield extends Territory {
+    public Battlefield(String name, String description) {
+        super(name, description);
+    }
+
+    @Override
+    public void interact() {
+        System.out.println("You feel tension in the air. This ground remembers every footstep taken in rage or hope.");
+    }
+}
+
+class Sanctuary extends Territory {
+    public Sanctuary(String name, String description) {
+        super(name, description);
+    }
+
+    @Override
+    public void interact() {
+        System.out.println("A stillness surrounds you. The Sanctuary does not heal the wound, but reminds you it exists.");
+    }
+}
+
+class Player {
+    private int fragments;
+
+    public Player() {
+        this.fragments = 0;
+    }
+
+    public void gainFragment() {
+        fragments++;
+        System.out.println("[+1] Fragment of Consciousness acquired. Total: " + fragments);
+        if (fragments % 3 == 0) {
+            unlockWhisper();
+        }
+    }
+
+    public void unlockWhisper() {
+        System.out.println("A voice echoes from within a champion...");
+        System.out.println("\"Even broken things remember how to shine.\"");
+    }
+}
+
+public class MapExplorer {
+    public static void main(String[] args) {
+        Territory highland = new Battlefield("Highland", "The path of vision and solitude, where echoes travel far.");
+        Territory mid = new Obelisk("The Middle Way", "A stone rooted between logic and illusion. It judges no one.");
+        Territory fire = new Battlefield("Firestarter", "Where rebellion was born in ash and will." );
+        Territory oblivion = new Sanctuary("Oblivion", "Silence grows here. A jungle untouched by history.");
+
+        highland.connect(mid);
+        mid.connect(fire);
+        fire.connect(oblivion);
+
+        Scanner scanner = new Scanner(System.in);
+        Territory current = highland;
+        Player player = new Player();
+
+        while (true) {
+            current.explore(player);
+            current.interact();
+
+            System.out.println("Where do you want to go?");
+            String choice = scanner.nextLine();
+
+            Optional<Territory> next = current.connections.stream()
+                .filter(t -> t.name.equalsIgnoreCase(choice.trim()))
+                .findFirst();
+
+            if (next.isPresent()) {
+                current = next.get();
+            } else {
+                System.out.println("That path does not exist.");
+            }
+        }
+    }
+}

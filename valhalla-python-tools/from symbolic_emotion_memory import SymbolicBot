@@ -1,0 +1,71 @@
+# symbolic_emotion_memory.py – Emotional Memory System for SymbolicBots
+
+import random
+
+class SymbolicBot:
+    def __init__(self, name, essence, base_aggression, base_caution):
+        self.name = name
+        self.essence = essence
+        self.aggression = base_aggression
+        self.caution = base_caution
+        self.state = "neutral"
+        self.memory = {
+            "fear": 0,
+            "confidence": 0,
+            "rage": 0
+        }
+
+    def perceive_environment(self, cosmic_energy_level, nearby_enemies, map_fog):
+        if cosmic_energy_level > 70:
+            self.aggression += 10
+            self.memory["confidence"] += 5
+        if len(nearby_enemies) > 2:
+            self.caution += 15
+            self.memory["fear"] += 7
+        if not map_fog:
+            self.caution += 5
+        if "Seth" in nearby_enemies:
+            self.memory["rage"] += 8  # symbolic grudge against certain champions
+
+        self._normalize_states()
+        self.update_state()
+
+    def _normalize_states(self):
+        self.aggression = min(self.aggression, 100)
+        self.caution = min(self.caution, 100)
+        for key in self.memory:
+            self.memory[key] = min(self.memory[key], 100)
+
+    def update_state(self):
+        if self.memory["fear"] > 60 and self.caution > 70:
+            self.state = "retreat"
+        elif self.memory["rage"] > 50:
+            self.state = "frenzy"
+        elif self.memory["confidence"] > 50 and self.aggression > 60:
+            self.state = "pursue"
+        else:
+            self.state = "watch"
+
+    def act(self):
+        if self.state == "frenzy":
+            return f"{self.name} enters a symbolic frenzy, essence of {self.essence} ablaze."
+        elif self.state == "retreat":
+            return f"{self.name} retreats into shadow, burdened by memory of fear."
+        elif self.state == "pursue":
+            return f"{self.name} moves swiftly with clarity and conviction."
+        else:
+            return f"{self.name} stands still, reading the signs between the stars."
+
+    def print_memory(self):
+        return f" {self.name}'s Memory → Fear: {self.memory['fear']}, Confidence: {self.memory['confidence']}, Rage: {self.memory['rage']}"
+
+
+# Example Simulation
+if __name__ == "__main__":
+    bot = SymbolicBot("Vael", "Harmony and Pulse", base_aggression=45, base_caution=30)
+    print("Before Environment:")
+    print(bot.print_memory())
+    bot.perceive_environment(cosmic_energy_level=85, nearby_enemies=["Leila", "Seth", "Hogan"], map_fog=False)
+    print("After Environment:")
+    print(bot.print_memory())
+    print(bot.act())

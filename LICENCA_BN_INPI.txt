@@ -1,0 +1,24 @@
+LICENÇA DE USO E PROTEÇÃO DE DIREITOS AUTORAIS
+
+Obra: Valhalla Rising – The Parchment – Evento Armageddon: Primaveril  
+Autor: Marcelo dos Santos Prado  
+Data de criação: 07 de julho de 2017  
+Data de entrada no repositório: 06 de abril de 2025  
+
+Declaro, para os devidos fins, que sou o autor original da obra acima referida, incluindo:
+
+– Arte visual e conceitual da personagem Primaveril  
+– Códigos-fonte em Python e Java aplicados às mecânicas do evento  
+– Narrativa (lore), estrutura textual e descrição de mecânicas únicas  
+– Organização e arquitetura do repositório
+
+Esta obra é protegida por direitos autorais e seu uso indevido, sem autorização formal, configura infração legal conforme a Lei nº 9.610/98 (Brasil).
+
+O uso da obra é permitido **apenas para fins educacionais e não comerciais**, desde que mantida a citação do autor.
+
+Assinatura: ____________________________________  
+CPF: 660.020.791-49  
+Data: ____/____/______  
+Local: ________________________________________
+
+(este documento deve ser impresso e assinado para registro na BN ou INPI)

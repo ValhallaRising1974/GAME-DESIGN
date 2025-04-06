@@ -1,21 +1,28 @@
-# Creative Commons Attribution-NonCommercial-NoDerivatives 4.0 International License
+MITA - Marcelo Intellectual & Technological Attribution License
+Copyright (c) 2017–2025 Marcelo dos Santos Prado
 
-This work, including all code, narrative, characters, lore, and symbolic systems within this repository, is licensed under:
+Permission is hereby granted to view and share the contents of this repository for **educational and non-commercial purposes only**, under the following conditions:
 
-**CC BY-NC-ND 4.0 International License**  
-(Attribution – NonCommercial – NoDerivatives)
+1. **Attribution** must be given to the original creator:
+   > Marcelo dos Santos Prado – Creator of *Valhalla Rising – The Parchment* and the Armageddon event: Primaveril
 
-You are free to:
+2. **No Commercial Use** is permitted under this license.
+   Any use of the content (code, characters, art, or story elements) for financial gain requires written consent from the author.
 
-- **Share** — copy and redistribute the material in any medium or format
+3. **No Derivatives** may be created from this material for redistribution. 
+   Modifications for personal or collaborative purposes must cite the original source and remain open-source.
 
-Under the following terms:
+---
 
-- **Attribution** — You must give appropriate credit, provide a link to the license, and indicate if changes were made.
-- **NonCommercial** — You may not use the material for commercial purposes.
-- **NoDerivatives** — If you remix, transform, or build upon the material, you may not distribute the modified material.
+This license covers:
+- Source code (Python & Java)
+- Artistic assets and illustrations
+- Lores, descriptions and narratives
+- Strategic mechanics and algorithms
 
-No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+**Date of Original Creation:** July 7, 2017  
+**Repository Entry:** April 6, 2025  
+**Author:** Marcelo dos Santos Prado  
+[marcelo@valhallarising.com] (fictitious placeholder for licensing)
 
-**Full license:**  
-https://creativecommons.org/licenses/by-nc-nd/4.0/
+License based on: [CC BY-NC-ND 4.0](https://creativecommons.org/licenses/by-nc-nd/4.0/)

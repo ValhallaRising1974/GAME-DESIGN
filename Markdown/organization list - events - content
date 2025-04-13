@@ -1,0 +1,20 @@
+1. Camada de Dados (Data Layer)
+   - JSON/YAML com status de campeões, atributos, builds
+
+2. Camada de Lógica (Game Logic)
+   - Classes Java/Python que processam habilidades, penalidades, buffs, cálculos de dano
+
+3. Camada de Visualização (UI/Game View)
+   - Houdini + Unreal + Imagens exportadas do Inkarnate
+   - Arte das habilidades e hitboxes
+
+4. Camada de Rede (Network)
+   - Java Sockets / WebSockets / REST API
+   - Integração com matchmaking
+
+5. Camada de Regras (Rules Engine)
+   - Penalidades por uso indevido de rotas
+   - Regras de sinergia, buffs de família, etc.
+/docs/pt-BR
+/docs/en-US
+/docs/fr-FR

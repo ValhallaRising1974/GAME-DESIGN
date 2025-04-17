@@ -2,7 +2,7 @@
 # Valhalla Rising – The Parchment  
 ## 🎮 Core Design Manifesto – Honor System & Community Philosophy  
 **Author:** Valhalla Rising (Marcelo dos Santos Prado)  
-**Created with Lyra – April 2025**
+**Created – April 2025**
 
 ---
 

@@ -1,5 +1,3 @@
----
-
 # Valhalla Rising
 
 ## PT-BR

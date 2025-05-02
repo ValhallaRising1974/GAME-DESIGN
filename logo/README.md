@@ -1,7 +1,3 @@
-<p align="center">
-  <img src="assets/logo.png" alt="Valhalla Rising Logo" width="500"/>
-</p>
-
 ---
 
 # Valhalla Rising

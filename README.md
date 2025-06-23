@@ -9,49 +9,22 @@
 
 ---
 
-## 🇧🇷 Português | Cultura e Criação
+🇨🇦 Canadian English | Culture and Creation
+Valhalla Rising is more than just a game. It’s an original universe born from a fusion of pain, mythology, and ancestral memory. Developed with profound emotional depth, the project merges Viking brutality with Mayan mysticism, transforming experience into art.
 
-**Valhalla Rising** é mais do que um jogo. É um universo original que nasce do entrelaçamento de dores, mitos, e ancestralidade. Criado com base em vivências profundas, ele une a brutalidade viking e o misticismo maia numa obra que transforma memória em arte.
+This repository contains the complete design framework of the game: characters, maps, gameplay mechanics, world-building, narrative, and more. Every creation here is officially registered and protected under copyright law.
 
-Este repositório contém o projeto de design completo do jogo: personagens, mapas, mecânicas, ambientação, história e mais. Toda criação aqui presente é registrada e protegida por direitos autorais.
+National Registrations:
+This intellectual property is registered at the Brazilian National Library (BN) and the National Institute of Industrial Property (INPI) under official processes. These registrations, while national, demonstrate the project’s authenticity, originality, and legal foundation. International registrations (WIPO/CIPO) are in progress.
 
-> “Quando o pergaminho é aberto, os deuses escutam…”
+“When the parchment is opened, the gods listen…”
 
----
+🇨🇦 Français canadien | Mythes et Création
+Valhalla Rising n’est pas seulement un jeu. C’est un univers original né de l’entrelacement de la douleur, des mythes et de l’héritage ancestral. Conçu avec une profondeur émotionnelle authentique, ce projet unit la brutalité viking et le mysticisme maya, transformant la mémoire en art.
 
-## 🇬🇧 English | Game Design & Global Vision
+Ce dépôt contient l’ensemble de l’architecture de conception du jeu : personnages, cartes, mécaniques de gameplay, création d’univers, narration, et bien plus encore. Chaque élément ici présent est officiellement enregistré et protégé par les lois sur le droit d’auteur.
 
-**Valhalla Rising** is a strategic and artistic MOBA project that merges Norse brutality with Mayan mysticism. Developed as a unique IP, it aims to deliver an immersive multiplayer experience rooted in mythology, cosmic aesthetics, and creative freedom.
+Enregistrements nationaux :
+Cette propriété intellectuelle est enregistrée auprès de la Bibliothèque Nationale du Brésil (BN) et de l’Institut National de la Propriété Industrielle (INPI) dans le cadre de processus officiels. Bien que nationaux, ces enregistrements attestent de l’authenticité, de l’originalité et de la légitimité juridique du projet. Les démarches internationales (OMPI/OPIC) sont en cours.
 
-This repository includes all core elements of the game design: champion concepts, maps, jungle systems, lore, mechanics, and visuals — presented for development, documentation, and global collaboration.
-
-> “When the parchment is opened, the gods listen…”
-
----
-
-## 🇫🇷 Français | Mythes et Esthétique
-
-**Valhalla Rising** est une œuvre interactive qui unit deux grandes civilisations oubliées : les Vikings et les Mayas. Inspiré par les astres, les rêves et les blessures humaines, ce projet évoque un monde suspendu entre ciel et pierre.
-
-Ce dépôt contient les fondations du jeu : héros, cartes, récits, systèmes et symboles. Chaque ligne, chaque forme, est porteuse de sens. Le jeu est un rituel. Une invocation.
-
-> « Quand le parchemin s’ouvre, les dieux écoutent... »
-
----
-
-## 📁 Structure
-
-- `Characters/` – Champions, classes and archetypes
-- `Map/` – World design, lanes, obelisks
-- `Lore/` – Universe history and timelines
-- `Patches/` – Future expansions (e.g., *The Parchment*)
-
----
-
-## 🛡️ Legal & Copyright
-
-This project is currently under development. All creative material is being registered with Brazil’s National Library (Biblioteca Nacional) and the National Institute of Industrial Property (INPI).
-
----
-
-© 2025 Valhalla Rising — All rights reserved.
+« Quand le parchemin s’ouvre, les dieux écoutent... »© 2025 Valhalla Rising — All rights reserved.
